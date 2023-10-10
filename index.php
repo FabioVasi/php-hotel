@@ -68,10 +68,17 @@ $hotels = [
 <body class="bg-secondary">
 
     <div class="container mt-5">
+
         <h1 class="text-center text-warning">Hotel's list</h1>
+
+        <form class="d-flex flex-wrap mt-5" method="GET">
+            <input class="form-control w-75 border-primary" type="text" name="parking" id="parking" placeholder="Type your preference here...">
+            <button class="btn btn-primary btn-lg ms-5 fw-bold border-warning" type="submit">Search</button>
+        </form>
+
         <div class="row">
             <div class="col-12">
-                <table class="table border border-2 border-primary">
+                <table class="table border border-2 border-primary mt-5">
                     <thead>
                         <tr>
                             <th scope="col-2">Hotels</th>
