@@ -69,7 +69,7 @@ $hotels = [
 
     <div class="container mt-5">
 
-        <h1 class="text-center text-warning">Hotel's list</h1>
+        <h1 class="text-center text-warning">Hotel list's</h1>
 
         <form class="d-flex flex-wrap mt-5" method="GET">
             <input class="form-control w-75 border-primary" type="text" name="parking" id="parking" placeholder="Type your preference here...">
@@ -82,42 +82,42 @@ $hotels = [
                     <thead>
                         <tr>
                             <th scope="col-2">Hotels</th>
-                            <th scope="col-2">1</th>
-                            <th scope="col-2">2</th>
-                            <th scope="col-2">3</th>
-                            <th scope="col-2">4</th>
-                            <th scope="col-2">5</th>
+                            <th class="border-start border-primary" scope="col-2">1</th>
+                            <th class="border-start border-primary" scope="col-2">2</th>
+                            <th class="border-start border-primary" scope="col-2">3</th>
+                            <th class="border-start border-primary" scope="col-2">4</th>
+                            <th class="border-start border-primary" scope="col-2">5</th>
                         </tr>
                     </thead>
                     <tbody class="border border-primary">
                         <tr>
                             <th scope="row">Name</th>
                             <?php foreach($hotels as $hotel) : ?>
-                                <td><?= $hotel['name'] ?></td>
+                                <td class="border-start border-primary"><?= $hotel['name'] ?></td>
                             <?php endforeach; ?>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
                             <?php foreach($hotels as $hotel) : ?>
-                                <td><?= $hotel['description'] ?></td>
+                                <td class="border-start border-primary"><?= $hotel['description'] ?></td>
                             <?php endforeach; ?>
                         </tr>
                         <tr>
                             <th scope="row">Parking</th>
                             <?php foreach($hotels as $hotel) : ?>
-                                <td><?= $hotel['parking'] ?></td>
+                                <td class="border-start border-primary"><?= $hotel['parking'] ?></td>
                             <?php endforeach; ?>
                         </tr>
                         <tr>
                             <th scope="row">Vote</th>
                             <?php foreach($hotels as $hotel) : ?>
-                                <td><?= $hotel['vote'] ?></td>
+                                <td class="border-start border-primary"><?= $hotel['vote'] ?></td>
                             <?php endforeach; ?>
                         </tr>
                         <tr>
                             <th scope="row">Distance to center</th>
                             <?php foreach($hotels as $hotel) : ?>
-                                <td><?= $hotel['distance_to_center'] ?></td>
+                                <td class="border-start border-primary"><?= $hotel['distance_to_center'] ?></td>
                             <?php endforeach; ?>
                         </tr>
                     </tbody>
