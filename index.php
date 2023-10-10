@@ -73,15 +73,56 @@ foreach ($hotels as $hotel) {
 </head>
 <body>
 
-    <ul>
-
-        <?php foreach($hotels as $hotel) : ?>
-            <li>
-                <?= $hotel['name'] . ' ' . $hotel['description'] . ' ' . $hotel['parking'] . ' ' . $hotel['vote'] . ' ' . $hotel['distance_to_center'] ?>
-            </li>
-        <?php endforeach; ?>
-
-    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table border">
+                    <thead>
+                        <tr>
+                            <th scope="col-2">Hotels</th>
+                            <th scope="col-2">1</th>
+                            <th scope="col-2">2</th>
+                            <th scope="col-2">3</th>
+                            <th scope="col-2">4</th>
+                            <th scope="col-2">5</th>
+                        </tr>
+                    </thead>
+                    <tbody class="border">
+                        <tr>
+                            <th scope="row">Name</th>
+                            <?php foreach($hotels as $hotel) : ?>
+                                <td><?= $hotel['name'] ?></td>
+                            <?php endforeach; ?>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <?php foreach($hotels as $hotel) : ?>
+                                <td><?= $hotel['description'] ?></td>
+                            <?php endforeach; ?>
+                        </tr>
+                        <tr>
+                            <th scope="row">Parking</th>
+                            <?php foreach($hotels as $hotel) : ?>
+                                <td><?= $hotel['parking'] ?></td>
+                            <?php endforeach; ?>
+                        </tr>
+                        <tr>
+                            <th scope="row">Vote</th>
+                            <?php foreach($hotels as $hotel) : ?>
+                                <td><?= $hotel['vote'] ?></td>
+                            <?php endforeach; ?>
+                        </tr>
+                        <tr>
+                            <th scope="row">Distance to center</th>
+                            <?php foreach($hotels as $hotel) : ?>
+                                <td><?= $hotel['distance_to_center'] ?></td>
+                            <?php endforeach; ?>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
