@@ -117,7 +117,7 @@ if (isset($_GET['parking']) && $_GET['parking'] == 1) {
             <label class="me-3 form-check-label" for="no_parking">No Parking</label>
 
             <div class="mb-3">
-                <select class="form-select form-select-sm mt-5 mb-3" name="rating" id="rating">
+                <select class="form-select form-select-sm mt-3 mb-3" name="rating" id="rating">
                     <option value="" <?php echo (isset($_GET['rating']) && $_GET['rating'] == '' ? 'selected' : '') ?>>All</option>
                     <option value="1" <?php echo (isset($_GET['rating']) && $_GET['rating'] == 1 ? 'selected' : '') ?>>1+</option>
                     <option value="2" <?php echo (isset($_GET['rating']) && $_GET['rating'] == 2 ? 'selected' : '') ?>>2+</option>
@@ -132,7 +132,7 @@ if (isset($_GET['parking']) && $_GET['parking'] == 1) {
 
         <div class="row">
             <div class="col-12">
-                <table class="table border border-2 border-primary mt-5">
+                <table class="table border border-2 border-primary">
                     <thead>
                         <tr>
                             <th class="border-start border-primary" scope="col">Name</th>
